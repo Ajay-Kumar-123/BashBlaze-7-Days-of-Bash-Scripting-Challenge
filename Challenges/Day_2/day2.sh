@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#Function to list the files and directories in the current path.
 function list_files_directories() {
 	echo "Welcome to Interactive File Explorer"
 	echo "Listing all files and directories in the current path"
@@ -7,6 +8,7 @@ function list_files_directories() {
 	ls -lh --group-directories-first
 }
 
+#Function to count the  number of characters in a text entered by the user.
 function character_count() {
 	echo "Enter the text to count the characters or press Enter to exit: "
 	while read -r input; do
@@ -20,6 +22,8 @@ function character_count() {
 	done	
 
 }
+
+#Main fucntion that defines the flow for the other functions
 
 function main() {
 	list_files_directories
